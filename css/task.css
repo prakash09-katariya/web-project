@@ -1,0 +1,27 @@
+*{
+    font-family: "Poppins", serif;
+    list-style: none!important;
+    text-decoration: none!important;
+}
+.nav-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right ul li a{
+    font-size: 14px;
+    display: block;
+    
+}
+
+.nav-list li a{
+    padding: 0px 10px;
+}

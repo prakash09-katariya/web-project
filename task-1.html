@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsOut 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
+  }
+  .loader:before {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: inset 0 0 0 1rem #fff;
+    animation-name: pulsIn;
+  }
+  .loader:after {
+    width: calc(100% - 2rem);
+    padding-bottom: calc(100% - 2rem);
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  @keyframes pulsIn {
+    0% {
+      box-shadow: inset 0 0 0 1rem #fff;
+      opacity: 1;
+    }
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 #fff;
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulsOut {
+    0%, 50% {
+      box-shadow: 0 0 0 0 #fff;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 1rem #fff;
+      opacity: 1;
+    }
+  }
+      
+    </style>
+</head>
+<body>
+    <header class="header-section  absolute w-[100%] p-[8px] ">
+        <div class="container mx-auto">
+            <div class="wrapper flex item-center justify-between py-4">
+                <div class="left flex gap-12">
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Home</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">About</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Team</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Work</a>
+                </div>
+                <div class="center">
+                    <a class="text-center text-[white] font-serif hover:text-[blue] hover:scale-110 logo" href="#"><img src="img/logo-white.png" alt=""></a>
+                </div>
+                <div class="left flex gap-12">
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Pricing</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">App</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Blog</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#">Contact</a>
+                    <a class="text-[white] font-['Poppins', sans-serif] hover:text-[blue] hover:scale-110 hover:underline underline-offset-8 underline-[blue]" href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section bg-[url(img/bg-img5.jpg)] p-[50px] h-[100vh] bg-fixed flex item-center flex-col justify-center">
+        <span class="loader mx-auto"><i class="fa-solid fa-play text-[44px] mx-auto text-[white] text-center"></i></span>
+        <h2 class="text-center text-4xl  py-[22.4px] text-[white] font-[400] text-[56px] font-['Poppins', sans-serif]">
+            Most Flexible One Page <br> HTML5 Template 
+        </h2>
+        <p class="text-center text-[white] max-w-[60%] mx-auto mb-[8px] font-['Poppins', sans-serif]">The integration of web fonts has always been one of the largest contributing factors to diversity in the overall look and feel of websites today vs. yesterday.</p>
+        <div class="wrapper-btn flex justify-center mt-[24px]">
+            <a class="text-[white] bg-[#00bcd4]  mr-4 px-[34px] py-[9px] text-center font-['Poppins', sans-serif]font-bold text-[white] hover:text-[blue]" href="">Learn More</a>
+            <a class="text-[white] font-['Poppins', sans-serif] text-[white] font-bold border px-[34px] py-[9px] hover:text-[blue] hover:bg-[white] " href="">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

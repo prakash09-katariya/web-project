@@ -1,0 +1,34 @@
+.article{
+    margin: 50px auto;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.article img:first-child{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 15px 
+    -3px rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.article img:last-child{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translatey(50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.article:hover img:first-child{
+    transform: perspective(250px)rotatex(70deg)translatez(0);
+}
+.article:hover img:last-child{
+    opacity: 1;
+    transform: translatey(10%);
+}

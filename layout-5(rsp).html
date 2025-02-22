@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/corella.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header class="header-section bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="img/corellalogo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Prevention</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Qurantine</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Stats
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Help</a>
+                      </li>
+                    </ul>
+                      <a href=""><button class="btn btn-primary " type="submit"><span>COVID-19</span> Tracker</button></a>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header> 
+
+    <div class="advice-section">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <h1><span>[Covid-19]</span> Disease <br>Advice for the Public.</h1>
+                <h3>COVID-19 is an illness caused by
+                  a coronavirus. </h3>
+                <p>Human coronaviruses are common and are
+                    typically associated with mild illnesses,
+                    similar to the common cold.</p>
+                <div class="buton-row d-flex align-item-center">
+                      <a href=""><button class="btn btn-primary me-3" type="submit"><span class="text-light">vMap</span>  Covid Stats</button></a>
+                      <a href="" class="play-btn" >
+                        <span class="me-2"><i class="fa-solid fa-circle-play"></i></span>
+                        Play Video
+                      </a>
+                </div>
+                <div class="count-miter">
+                  <div class="row miter-row">
+                    <div class="col-lg-4 col-md-6   ic">
+                      <span>America CASES</span>
+                      <h3><span class="loader">Loading</span></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-6  ic">
+                      <span>DEATHS</span>
+                      <h3><span class="loader">Loading</span></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-6   ic">
+                      <span>RECOVERED</span>
+                      <h3><span class="loader">Loading</span></h3>
+                    </div>
+                  </div>
+                </div>
+                 
+            </div>
+            <div class="col-md-6 ">
+              <img width="100%" src="img/advice.png" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="page-title-content">
+                        <p>COVID-19</p>
+                        <h3>Ajax Data Table - Covid-19 Country Wise State</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sy-of-corella">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6 m-auto">
+            <div class="washing-step-content">
+                <h5>What are the Symptoms of COVID-19</h5>
+                <h2>SYMPTOMS of Corellavirus</h2>
+                <p>Symptoms may take up to 14 days to appear after exposure to COVID-19. This is the longest
+                  known incubation period for this disease. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-lg-4 ">
+            <div class="content">
+              <span><img src="img/fever.svg" alt=""></span>
+              <h4>Fever</h4>
+              <p>Fever is a key symptom, experts say. Don't fixate on a number, but know it's really not a
+                fever until temperature reaches at  100 degrees</p>
+            </div>
+          </div>
+          <div class="col-lg-4 ">
+            <div class="content">
+              <span><img src="img/fever.svg" alt=""></span>
+              <h4>Cough</h4>
+              <p>Coughing is another key symptom, but it's not just any cough, said Schaffner. It should
+                be a dry cough that you feel in your chest.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 ">
+            <div class="content">
+              <span><img src="img/fever.svg" alt=""></span>
+              <h4>Difficulty Breathing</h4>
+              <p>Shortness of breath can be a third -- and very serious -- manifestation of Covid-19, and
+                it can occur on its own, without a cough. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how-to-spred ">
+       <div class="container">
+        <div class="row">
+            <div class=" col-lg-5">
+              <div class="left-img">
+                 <img width="100%" src="img/spred.png" alt="">
+              </div>
+            </div>
+            <div class=" col-lg-7 ms-auto">
+                <h2>HOW IT IS SPREAD</h2>
+                <p>Coronaviruses are most commonly spread from
+                  an infected person through:</p>
+                <div class="spred-content">
+                      <ul>
+                        <li><span><i class="fa-solid fa-check"></i></span> Respiratory droplets when you cough or sneeze </li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Close personal contact, such as touching or shaking hands</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Touching something with the virus on it.</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+    
+    <div class="privention">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6 m-auto">
+            <div class="washing-step-content">
+                <h5>How do we prevent Covid-19?</h5>
+                <h2>PREVENTION OF CORONAVIRUS</h2>
+                <p>The best way to prevent the spread
+                  of infections is to:</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/abc.png" alt=""></span>
+            <h4>cover your mouth</h4>
+            <p> Cover your mouth and nose with your arm or tissues to reduce the spread of germs</p>
+          </div>
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/mouth.png" alt=""></span>
+            <h4>Avoid Touching</h4>
+            <p>  Avoid touching your eyes, nose or mouth,especially with unwashed hands</p>
+          </div>
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/avoide-closs.png" alt=""></span>
+            <h4>avoid close </h4>
+            <p>  Avoid close contact with people who are sick</p>
+          </div>
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/cover-mouth.png" alt=""></span>
+            <h4>cover your mouth</h4>
+            <p>  Cover your mouth and nose with your arm or tissues to reduce the spread of germs</p>
+          </div>
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/use-dustbin.png" alt=""></span>
+            <h4>Use Dustbin</h4>
+            <p>  Immediately dispose of any tissues you have used into the garbage as soon as possible
+              and wash your hands afterward</p>
+          </div>
+          <div class="col-lg-4  text-center item">
+            <span><img src="img/clean.png" alt=""></span>
+            <h4>clean and disinfect</h4>
+            <p> Cover your mouth and nose with your arm or tissues to reduce the spread of germs</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="washing-step">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6 m-auto">
+            <div class="washing-step-content">
+                <h5>Follow the washing steps</h5>
+                <h2>WASH YOUR HANDS MIN 20 Second</h2>
+                <p>The best way to prevent the spread
+                  of infections is to:</p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+              <span>
+                <img src="img/washing-tips-1.png" alt="">
+              </span>
+              <div class="circle">1</div>
+              <h4>Wet hands with warm water</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+            <span>
+              <img src="img/washing-tips-1.png" alt="">
+            </span>
+            <div class="circle">2</div>
+            <h4>Apply soap</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">3</div>
+                <h4>20 seconds, make sure to wash:</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">4</div>
+                <h4>Rinse well </h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">5</div>
+                <h4>Dry hands well
+                    with paper towel </h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">6</div>
+                <h4>Wet hands with warm water</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">7</div>
+                <h4>Wet hands with warm water</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 washing-tips">
+                <span>
+                  <img src="img/washing-tips-1.png" alt="">
+                </span>
+                <div class="circle">8</div>
+                <h4>Wet hands with warm water</h4>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="have-symptom-section">
+        <div class="container">
+          <div class="row text-center  d-flex justify-content-center" >
+            <div class="col-xl-6  ">
+                <div class="title-section ">
+                  <h5>If you feel</h5>
+                  <h2>HAVE SYMPTOMS of Covid-19</h2>
+                  <p>If you have SYMPTOMS of COVID-19
+                    — fever, cough, or difficulty breathing:</p>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4  text-center row-symtoms">
+              <img class="p-3 rounded-circle" src="img/symtooms-1.png" alt="">
+              <h4>Stay home</h4>
+              <p>stay home to avoid spreading it to others
+                — if you live with others, stay in a
+                separate room or keep a 2-metre
+                distance</p>
+            </div>
+            <div class="col-lg-4  text-center row-symtoms">
+              <img class="p-3 rounded-circle" src="img/symtooms2.png" alt="">
+              <h4>Call ahead</h4>
+              <p> call ahead before you visit a health care
+                professional or call your local public
+                health authority
+                — tell them your symptoms and follow
+                their instructions</p>
+            </div>
+            <div class="col-lg-4  text-center row-symtoms">
+              <img class="p-3 rounded-circle" src="img/symtooms3.png" alt="">
+              <h4>Emergency Call</h4>
+              <p> if you need immediate medical attention,
+                call 911 — tell them your symptoms and follow
+                their instructions</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="info-titile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="cta-content">
+                        <h2>FOR MORE INFORMATION ON CORONAVIRUS</h2>
+                        <div class="row">
+                            <div class="col-md-6 d-flex  first-row">
+                                <div class="cta-call">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                    +1234567890
+                                </div>
+                            </div>
+                            <div class="col-md-6 first-row">
+                                <div class="cta-call">
+                                    <span><i class="fa-solid fa-globe"></i></span>
+                                    www.example.com
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 left-part">
+                    <a class="link" href=""><img src="img/corellalogo.png" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row footer-tab">
+                      <div class="col-md-3 col-sm-6">
+                        <h4>Quick Link</h4>
+                        <ul class="p-0 m-0">
+                          <li><a href="">Prevention</a></li>
+                          <li><a href="">Qurantine</a></li>
+                          <li><a href="">About</a></li>
+                          <li><a href="">Help</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <h4>Helpful LINK</h4>
+                        <ul class="p-0 m-0">
+                          <li><a href="">Preparation</a></li>
+                          <li><a href="">Clean</a></li>
+                          <li><a href="">WHO Website</a></li>
+                          <li><a href="">CDC Website</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <h4>Important LINK</h4>
+                        <ul class="p-0 m-0">
+                          <li><a href="">Hand Wash</a></li>
+                          <li><a href="">Social Distance</a></li>
+                          <li><a href="">Isolate</a></li>
+                          <li><a href="">Difference</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-sm-6 mt-5">
+                        <ul class="p-0 m-0">
+                          <li><a href="">Harvard Health</a></li>
+                          <li><a href="">NHS Website</a></li>
+                          <li><a href="">XMR to BTC</a></li>
+                          <li><a href="">ETC to DASH</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="botoom-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-8">
+            <p>© Copyright 2020 <a href="">Corella</a> I All Rights Reserved</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <ul class="footer-icone">
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

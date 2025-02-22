@@ -1,0 +1,17 @@
+.animation-image{
+    
+    animation: movement  7s linear infinite;
+}
+
+@keyframes movement {
+    0%{
+        transform: translatey(2%);
+    }
+    50%{
+        transform: translatey(-2%);
+    }
+    100%{
+        transform: translatey(2%);
+    }
+}
+

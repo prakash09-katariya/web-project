@@ -1,0 +1,317 @@
+*{
+    /* font-family: "Poppins", serif!important; */
+    list-style: none!important;
+    text-decoration: none!important;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+.header-top{
+    background-color: #1b2a4e;
+}
+.right-part{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: end;
+}   
+
+.right-part li a,.text-light{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    display: block;
+}
+
+.nav-section ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+.nav-section ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(24, 21, 21);
+}
+.nav-section ul li a:hover{
+    color: blueviolet;
+}
+.icon-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+.icon-nav  li a {
+    width: 24px;
+    height: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-nav{
+    padding: 26px 0;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    margin: auto;
+    width: 100%; 
+    z-index: 1; 
+     
+}
+.banner-section{
+    background-image: url(../img/bannerimage.jpg);
+    background-size:cover;
+    padding: 270px 0;
+    position: relative;
+    
+    /* height: 100vh; */
+}
+.banner-text h1 {
+    font-family: "Montserrat", serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    z-index: 1;
+    
+}
+.banner-text h1::before{
+    content: '';
+    position: absolute;
+    width: 157px;
+    height: 154px;
+    top: -40px;
+    left: -28px;
+    background-image: url(../img/brush.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+}
+.banner-text h1 span {
+    color: #FF3F90;
+    margin-left: 20px;
+}
+.logo-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0 21px;
+}
+.product-section{
+    padding: 75px 0 69px;
+    margin: 0;
+}
+.heading-small{
+    padding-bottom: 48px;
+    margin: 0;
+}
+
+.pro-img{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.pro-img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 5px;
+    visibility: hidden;
+    
+}
+
+.pro-img:hover.pro-img::before{
+    visibility: visible;
+}
+.bg-black{
+    position: relative;
+}
+.content-row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+}
+.content-row p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Montserrat", serif;
+}
+.sub-banner{
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    margin: 73px 0 50px;
+}
+.heading-sub-banner{
+    max-width: 516px;
+    font-size: 54px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    white-space: break-spaces;
+    line-height: 1.45;
+}
+.heading-sub-banner span{
+    color: #7C3FFF;
+    font-family: "Montserrat", serif;
+}
+
+.brand-section{
+    padding: 61px 0 76px;
+}
+
+.footer-section{
+    padding: 71px 0 61px;
+    background-color: #E4E4E4;
+}
+.banner{
+    background-image: url(../img/collection-banenr.jpg);
+    background-size: cover;
+}
+
+.footer-section{
+    padding: 100px 0;
+    background-color: #1b2a4e;
+}
+.left-part .link img{
+    padding-bottom: 16px;
+    color: white;
+}
+.left-part p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #8686b5;
+    max-width: 369px;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-tab h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: white;
+    margin: 0 0 20px 0;
+    display: block;
+}
+.footer-tab ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #8686b5;
+    margin: 0 0 10px 0;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* ..................................media-quari................................................... */
+
+@media (max-width:992px) {
+    .right-part li a, .text-light {
+        font-size: 14px;
+    }
+    .nav-section ul li a {
+        font-size: 14px;
+    }
+    .banner-section {
+        padding: 134px 0;
+    }
+
+    .btn{
+        font-size: 14px;
+    }
+
+    .content-row p {
+        font-size: 24px;
+        
+    }
+    .heading-sub-banner {
+        font-size: 42px;
+    }
+    .sub-banner {
+        padding: 80px 0;
+    }
+    .product-section {
+        padding: 40px 0 50px;
+    }
+
+    .brand-section {
+        padding: 40px 0 50px;
+    }
+    .banner-text h1 span {
+        margin-left: 10px;
+    }
+    .banner-text h1 {
+        margin-bottom: 43px;
+    }
+    .logo-row {
+        padding: 40px 0 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .btn {
+        font-size: 16px;
+    }
+
+    .col-sm-12 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:576px) {
+    .footer-section .left-part{
+        text-align: center;
+    }
+    .footer-section .left-part p{
+        margin: auto;
+    }
+    .footer-tab{
+        text-align:center;
+        padding-top: 20px;
+    }
+
+    .footer-tab ul:last-child{
+        margin-top: 0 ;
+    } 
+    .heading-sub-banner {
+        font-size: 35px;
+    }
+    .header-section .header-top .middle{
+        visibility: hidden;
+    }
+    .right-part li a, .text-light {
+        font-size: 11px;
+    }
+    .right-part {
+        margin: auto;
+    }
+}

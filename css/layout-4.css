@@ -1,0 +1,139 @@
+*{
+    text-decoration: none!important;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+.header-top  .header-top-tex a,.header-top  .header-top-tex{
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 300;
+    margin-left: 16px;
+    color: #2b2b2b;
+}
+.header-top{
+    display: flex;
+    align-items: center;
+}
+
+/* ............................................................................ */
+.header-nav{
+    background-color:#63c600;
+    opacity: 0.8;
+    padding: 8px 0;
+    position:sticky;
+    top: 0;
+    width: 100%;
+}
+.header-nav .nav-list .nav-item  .nav-link{
+   font-size: 15px;
+   font-weight: 300;
+   letter-spacing: 0.5px;
+   line-height: 26px;
+   text-align: center;
+   width: 100px;
+   display: flex;
+   color: #ffffff;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+}
+.header-nav .nav-list .nav-item  .nav-link:hover{
+    background-color:  #00bcd4;
+}
+
+/* ......................................................................... */
+
+.hero-section{
+    background-image: url(../img/hero-bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+    
+}
+.hero-section::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+}
+.hero-content{
+    position: absolute;
+    display: block;
+    visibility: visible;
+    left: 302px;
+    top: 235px;
+    z-index: 4;
+}
+.hero-content h1{
+    font-size: 44px;
+    font-weight: 500;
+    line-height:44px;
+    color: #2b2b2b;
+}
+.hero-content p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height:25px;
+    color: #2b2b2b;
+}
+
+/* ........................................................................................ */
+.artical-section{
+    padding: 120px 0;
+}
+.artical-section h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height:57.6px;
+    letter-spacing: 0.6px;
+    color: #2b2b2b;
+}
+.artical-section p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height:26px;
+    letter-spacing: 0.6px;
+    color: #6d6d6d;
+}
+.artical-card h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #2b2b2b;
+    display: block;
+    padding: 40px 0;
+}
+.artical-card h3{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    color: #2b2b2b;
+    display: block;
+}
+.artical-card p{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #6d6d6d;
+    display: block;
+}
+/* .................................................................... */
+.comp-info .content-row  h5{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #6d6d6d;
+    display: block;
+}
