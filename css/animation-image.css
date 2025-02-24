@@ -15,3 +15,44 @@
     }
 }
 
+
+.animation{
+    
+    animation: movement 3s ease-in-out infinite;
+
+}
+
+
+
+@keyframes movement {
+    0%{
+        transform: translatex(2%);
+    }
+    50%{
+        transform: translatex(-2%);
+    }
+    100%{
+        transform: translatex(2%);
+    }
+}
+
+
+.card .content .img-row:hover img{
+    transform:rotatex(90deg);
+    animation: rotedx 1s ease-in-out infinite;
+}
+
+@keyframes rotedx {
+    0%{
+        transform:rotatey(0deg);;
+    }
+    50%{
+        transform:rotatey(90deg);
+    }
+    100%{
+        transform:rotatey(0deg);
+        
+    }
+}
+
+

@@ -155,27 +155,7 @@
     z-index: 1;
 }
 
-.item-card::before{
-    content: "";
-    width: 800px;
-    height: 150px;
-    background-color: #060606;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)rotate(45deg);
-    animation: round 2s linear infinite;
-    z-index: -1;
-}
-@keyframes round {
-    100%{
-        transform: translate(-50%,-50%)rotate(360deg);
-    }
-}
-/* .icon-box:hover{
-    transform:scale(0.9);
-    border: 0.5px solid grey;
-} */
+
 
 .icon-box i{
     width: 80px;

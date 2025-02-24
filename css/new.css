@@ -11,6 +11,8 @@
     opacity: 0.8;
 }
 
+
+
 .banner{
     padding: 150px 0 100px;
     background-color: #000000;
@@ -43,15 +45,7 @@
     color: white;
     opacity: 0.5    ;
 }
-span{
-    padding: 10px 25px;
-    background-color: transparent;
-    color: white;
-    border: 0.5px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 .list-footer li a{
     padding: 10px 0;
     display: block;
