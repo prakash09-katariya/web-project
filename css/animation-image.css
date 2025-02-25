@@ -37,7 +37,7 @@
 }
 
 
-.card .content .img-row:hover img{
+.card .content .img-row:hover img {
     transform:rotatex(90deg);
     animation: rotedx 1s ease-in-out infinite;
 }
