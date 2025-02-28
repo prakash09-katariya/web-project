@@ -17,13 +17,25 @@
 
 </head>
 <body>
-    <div class="w-full py-[8px]">
+    <div class="w-full lg:hidden sm:block max-[640px]:px-[15px] ">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3 flex justify-between items-center py-[15px]">
+                <a class="block" href="#"><i class="fa-solid fa-bars"></i></a>
+                <a class="block flex justify-center" href="#">
+                    <img src="img/logo-cosmetic.png" alt="" width="50% ">
+                </a>
+                <a class="block ml-auto" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-full max-[640px]:px-[15px] py-[8px] lg:block sm:hidden max-[640px]:hidden">
         <div class="container mx-auto">
             <div class="grid grid-cols-12 flex justify-between   ">
-                <div class="col-span-6 sm:col-span-12 md:col-span-6  max-[640px]:col-sapn-12">
+                <div class="col-span-4 sm:col-span-12 md:col-span-6 max-[640px]:col-span-12 max-[640px]:col-sapn-12">
                     <div class="header-left flex items-center gap-[20px]">
                         <ul class="flex items-center gap-2">
-                            <li class=""><a class="text-[11.18px] leading-[22px] font-[400] blockflex items-center flex gap-[3px]" href="#">
+                            <li class=""><a class="text-[11.18px] leading-[22px] font-[400] block flex items-center flex gap-[3px]" href="#">
                                 <img src="img/english.png" alt=""><span>English</span> <i class="fa-solid fa-angle-down"></i>
                             </a>
                              </li>
@@ -39,9 +51,9 @@
                         <span class="absolute w-[1px] h-[]"></span>
                     </div>
                 </div>
-                <div class="col-span-6 md:ml-auto sm:col-span-12 md:col-span-6  max-[640px]:col-sapn-12 ">
-                    <div class="header-left flex items-center gap-[20px]">
-                        <ul class="flex items-center gap-4">
+                <div class="col-span-6 sm:col-span-12 md:col-span-6  md:ml-auto  max-[640px]:col-span-12  max-[768px]:mt-[20px]  max-[768px]:m-auto md:col-span-6  f max-[640px]:col-sapn-12 ">
+                    <div class="header-left flex items-center gap-[20px] max-[640px]:gap-[5px]">
+                        <ul class="flex items-center gap-4 px-[10px] border-r-1">
                            <li><a class="w-[13px] h-[13px] flex items-center justify-center" href=""><i class="text-[13px] fa-brands fa-facebook-f"></i></a></li>
                            <li><a class="w-[13px] h-[13px] flex items-center justify-center" href=""><i class="text-[13px] fa-brands fa-tiktok"></i></a></li>
                            <li><a class="w-[13px] h-[13px] flex items-center justify-center" href=""><i class="text-[13px] fa-brands fa-youtube"></i></a></li>
@@ -57,24 +69,27 @@
             </div>
         </div>
     </div>
-    <div class="w-full py-[25px]">
+    <div class="w-full max-[640px]:px-[15px] py-[25px] sticky top-[0] z-[5] shadow-lg bg-[white]">
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 flex items-center gap-[25px]">
-                <div class="col-span-2 max-[768px]:col-span-2 ">
+            <div class="grid grid-cols-12 flex items-center gap-[15px]">
+                <div class="col-span-2 max-[768px]:col-span-3 max-[768px]:hidden ">
                     <a href="#">
                         <img src="img/logo-cosmetic.png" alt="" width="70%">
                     </a>
                 </div>
                 <div class="col-span-8  bg-[#efefef] max-[768px]:col-span-12">
-                    <div class="flex justify-between">
+                    <div class="flex justify-between rounded-lg overflow-hidden">
                         <a class="flex gap-[50px] max-[768px]:gap-[30px] border-r-1 text-[13px] leading-[24px] font-[500] block py-[10px] pl-[20px] pr-[20px]  block" href="#">All Categories <span><i class="fa-solid fa-angle-down"></i></span></a>
-                        <a class="text-[11.18px] leading-[22px] font-[400] block py-[10px] pl-[20px] block" href="#">Search For Products </a>
-                        <a class="w-[46px] h-[46px] flex items-center justify-center bg-[red]" href="#">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
+                        <div class="flex justify-start relative rounded-lg">
+                            <a class="text-[11.18px]  mr-auto leading-[22px] font-[400]  py-[10px] pl-[20px] pr-[295px] md:pr-[170px] max-[640px]:pr-[50px]" href="#">Search For Products </a>
+                            <a class="absolute right-[0] block w-[46px] h-[46px] flex items-center justify-center bg-[#c6213b] rounded-lg text-[white]" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="col-span-2 mh:hidden">
+                <div class="col-span-2 md:col-span-12 lg:col-span-2">
                     <ul class="flex items-center gap-3">
                         <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-user"></i></a></li>
                         <li><a class="text-[13px] leading-[24px] font-[500] block" href="">Account</a></li>
@@ -86,12 +101,12 @@
         </div>
     </div>
 
-    <div class="w-full pt-[3px] pb-[12px]">
+    <div class="w-full max-[640px]:px-[15px] pt-[3px] pb-[12px]">
         <div class="container mx-auto">
             <div class="grid grid-cols-12">
                 <div class="col-span-12 max-[768px]:hidden">
                     <div class="nav flex items-center justify-between">
-                        <ul class="flex items-center gap-[30px]">
+                        <ul class="flex items-center gap-[30px] md:gap-[25px]">
                             <li><a class="text-[13px] leading-[20px]  font-[500] block flex items-center gap-[3px]" href="">Pages <i class="fa-solid fa-angle-down"></i></a></li>
                             <li><a class="text-[13px] leading-[20px]  font-[500] block" href="">Gift Guide</a></li>
                             <li><a class="text-[13px] leading-[20px]  font-[500] block" href="">Skincare</a></li>
@@ -107,7 +122,7 @@
         </div>
     </div>
 
-    <div class="w-full">
+    <div class="w-full max-[640px]:px-[15px]">
         <div class="container mx-auto">
             <div class="grid grid-cols-1">
                 <h2 class="text-[26px] font-[600] leading-[32px] text-center pb-[30px]">Popular Products</h2>
@@ -116,7 +131,125 @@
                 <div class="card p-[20px] relative border border-[grey]">
                     <div class="im relative mb-[10px]  ">
                         <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
+                        <span class="rounded-sm absolute top-[0] left-[0] text-[12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px] hover:visible ">
+                        <img src="img/cosmetic-2.jpg" alt="" >
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> KUORA Tinted Facial Sunscreen SPF 50+</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $14 
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] invisible ">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px]  ">
+                        <img src="img/cosmetic-2.jpg" alt="">
+                        <span class="rounded-sm absolute top-[0] left-[0] text-[12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> Translucent Compact Face Powder - 03 Medium,</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $9 <span class="text-[#818388] text-[13px] "><del>$ 14</del></span>
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px]  ">
+                        <img src="img/cosmetic-2.jpg" alt="">
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> Cover Up Peach Acrylic Powder for Nail Art (40gm)</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $34 
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px]  ">
+                        <img src="img/cosmetic-2.jpg" alt="">
+                        
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> Eye Shadow Palette, Natural Nudes, 0.19 Ounce</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $28 
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px]  ">
+                        <img src="img/cosmetic-2.jpg" alt="">
+                        <span class="rounded-sm absolute top-[0] left-[0] text-[12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-17%</span>
+                    </div>
+                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
+                        <a href="#"> Allure Luminous Intense Lipstick 0.15oz</a>
+                    </h3>
+                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
+                        $20 <span class="text-[#818388] text-[13px] "><del>$ 24</del></span>
+                    </h5>
+                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        
+                     </ul>  
+                    
+
+                </div>
+                <div class="card p-[20px] relative border border-[grey]">
+                    <div class="im relative mb-[10px]  ">
+                        <img src="img/cosmetic-2.jpg" alt="">
+                        <span class="rounded-sm absolute top-[0] left-[0] text-[12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-11%</span>
                     </div>
                     <h3 class="text-[13px] font-[400] leading-[19.5px]">
                         <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
@@ -136,13 +269,13 @@
                 <div class="card p-[20px] relative border border-[grey]">
                     <div class="im relative mb-[10px]  ">
                         <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
+                        
                     </div>
                     <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
+                        <a href="#"> Make Up For Ever Water Blend Face & Body Foundation</a>
                     </h3>
                     <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
+                        $48 <span class="text-[#818388] text-[13px] "><del>$ 47</del></span>
                     </h5>
                      <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
                         <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
@@ -156,13 +289,13 @@
                 <div class="card p-[20px] relative border border-[grey]">
                     <div class="im relative mb-[10px]  ">
                         <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
+                        <span class="rounded-sm absolute top-[0] left-[0] text-[12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
                     </div>
                     <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
+                        <a href="#"> Stripe White Fabric Tote Cosmetic Bag</a>
                     </h3>
                     <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
+                        $27
                     </h5>
                      <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
                         <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
@@ -176,133 +309,13 @@
                 <div class="card p-[20px] relative border border-[grey]">
                     <div class="im relative mb-[10px]  ">
                         <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
                         
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
                     </div>
                     <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
+                        <a href="#"> Matte & Shimmer Palette, Metallic High Pigmented, Mirror Compact</a>
                     </h3>
                     <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
-                    </h5>
-                     <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        
-                     </ul>  
-                    
-
-                </div>
-                <div class="card p-[20px] relative border border-[grey]">
-                    <div class="im relative mb-[10px]  ">
-                        <img src="img/cosmetic-2.jpg" alt="">
-                        <span class="absolute top-[0] left-[0] [12px] font-[500] leading-[18px] bg-[#c6213b] py-[3px] px-[5px] text-[white]">-37%</span>
-                    </div>
-                    <h3 class="text-[13px] font-[400] leading-[19.5px]">
-                        <a href="#"> Makeup Brushes Artisan Easel Elite Cosmetics</a>
-                    </h3>
-                    <h5 class="text-[17px] font-[500] leading-[18px] mt-[7px]">
-                        $19 <span class="text-[#818388] text-[13px] "><del>$ 30</del></span>
+                        $25
                     </h5>
                      <ul class="flex-row gap-4 absolute right-[5%] top-[5%] hover:visible">
                         <li><a class="w-[24px] h-[24px] flex items-center justify-center" href=""><i class="fa-solid fa-heart"></i></a></li>
@@ -320,5 +333,94 @@
             </div>
         </div>
     </div>
+
+    <div class="w-full max-[640px]:px-[15px] py-[80px] bg-[#f3f3f3] mt-[50px]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1  ">
+                <h2 class="text-center [26px] font-[600] leading-[32px] mb-[14px]">
+                    Join our newsletter 
+                </h2>
+                <p class="text-center [13px] font-[400] leading-[20px] mb-[30px]">Get recommendations, tips, updates, promotions and more.</p>
+                <div class="flex items-center justify-between w-[60%]  m-auto py-[9px] pl-[20px]  shadow-lg">
+                    <input type="text " class="max-width-[475px] pr-[5px] text-[14px]" placeholder="enter your email address ">
+                    <button class="w-[50px] h-[42px] flex items-center justify-center"><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="w-full max-[640px]:px-[15px] bg-[#f3f3f3] pt-[80px] pb-[32px] ">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 max-[640px]:grid-cols-1 gap-4 flex items-center">
+                <div class="mb-[20px]">
+                    <h2 class="mb-[20px] w-[20%] max-[768px]:w-[15%]"><img src="img/logo-cosmetic.png" alt=""></h2>
+                    <h5  class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]"><i class="fa-solid fa-location-dot"></i> 29 SE 2nd Ave, Miami Florida 33131, United States</h5>
+                    <h6 class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]"><i class="fa-solid fa-envelope"></i> info@example.com</h6>
+                    <a href="tel:9239427879">(+92) 3942 7879</a>
+                    
+                </div>
+                <div class="right">
+                    <div class="grid grid-cols-5 md:grid-cols-5 max-[640px]:grid-cols-2 flex gap-4">
+                        <div>
+                            <h2 class="hover:text-[red]  text-[14px] font-[600] text-[black]  leading-[14px] mb-[28px]">Shop More</h2>
+                            <ul>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px] href="">New Arrival</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px] href="">Sale off</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px] href="">Makeup Sets</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px] href="">Lipstick</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px] href="">Mascara</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="hover:text-[red]  text-[14px] font-[600] text-[black]  leading-[14px] mb-[28px]">.</h2>
+                            <ul>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Nail Care</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Lip Care</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Body Care</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Hair Care</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="hover:text-[red]  text-[14px] font-[600] text-[black]  leading-[14px] mb-[28px]">SHOPPING</h2>
+                            <ul>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Wishlist</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Shop by Brand</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Offers</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Track order</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Size Guide</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="hover:text-[red]  text-[14px] font-[600] text-[black]  leading-[14px] mb-[28px]">INFOMATION</h2>
+                            <ul>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Track Order</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Shipping & Returns</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">About us</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Help</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="hover:text-[red]  text-[14px] font-[600] text-[black]  leading-[14px] mb-[28px]">ACCOUNT</h2>
+                            <ul>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Cart</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">My account</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">My orders</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Wishlist</a></li>
+                                <li><a class="hover:text-[red]  text-[13px] font-[400] text-[black]  leading-[22px]" href="">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    
 </body>
 </html>
