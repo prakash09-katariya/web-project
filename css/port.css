@@ -3,12 +3,18 @@
     list-style: none;
 }
 
+.navbar{
+    position: sticky;
+    top: 0;
+    
+    z-index: 2;
+}
 .navbar .nav-item .nav-link{
     font-size: 14px;
     color: white!important;
 }
 .navbar .nav-item a:hover{
-    color: rgb(241, 241, 241)!important;
+    color: rgb(33, 33, 56)!important;
 }
 
 .icone .nav-item .nav-link{
@@ -19,6 +25,10 @@
     justify-content: center;
     font-size: 18px;
     
+}
+.icone .nav-item .nav-link:hover{
+    color: brown;
+    transform: scale(1.5);
 }
 
 .img-right img{
