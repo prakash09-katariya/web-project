@@ -1,5 +1,11 @@
-.navbar .nav-item a{
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar .nav-item .nav-link{
     font-size: 14px;
+    color: white!important;
 }
 .navbar .nav-item a:hover{
     color: rgb(241, 241, 241)!important;
@@ -12,4 +18,15 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    
+}
+
+.img-right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-left img{
+    width: 100%;
+    object-fit: cover;
 }
