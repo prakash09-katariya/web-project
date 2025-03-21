@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none !important;
-    font-family: "Roboto Serif", serif !important;
+    /* font-family: "Roboto Serif", serif !important; */
 
 }
 
@@ -102,7 +102,7 @@ header{
 .side {
     position: absolute;
     right: 53%;
-    top: -5%;
+    top:    -2%;
     transform: rotate(-90deg);
     z-index: 1;
 }
@@ -112,7 +112,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    width: 50%;
+    width: 52%;
     margin: 0;
     padding: 26px 20px;
     
@@ -230,8 +230,9 @@ header{
     z-index: -1;
 }
 .box1{
-    width: 80%;
+    width: 70%;
     height: 100%;
+    border: 20px solid white;
 }
 .box1 img{
     width: 100%;
@@ -239,11 +240,11 @@ header{
 
 .box5{
     position: absolute;
-    bottom: 183px;
+    bottom: -210pxpx;
     right: 0;
     width: 60%;
     border: 10px solid white;
-    z-index: 5;
+    
 }
 .box3{
     position: absolute;
@@ -253,6 +254,7 @@ header{
     height: 172px;
     background-color: #FFB400;
 }
+
 
 .achivement  button{
     padding: 16px 32px 16px 24px;
@@ -377,6 +379,7 @@ image{
 }
 .footer .f-col .logo {
     padding-bottom: 32px;
+    filter: brightness(15);
 }
 .footer .f-col .list-fo li{
     color: #6f7f92;
@@ -434,3 +437,106 @@ image{
     line-height:26.56px;
     font-weight: 500;
 }
+
+.tesimoneal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 152px 0;
+    
+}
+.dd{
+    position: relative;
+}
+.box-d{
+    width: 75%;
+    height: 80%;
+    background-color: #080c18;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    z-index: -1;
+    background-color: #FFB400;
+    transition: translate(-50% ,-50%);
+}
+
+.tesimoneal p{
+    font-size: 28.43px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47.19px;
+    color: #6f7f92;
+    padding-top: 48px;
+}
+
+.tesimoneal h5{
+    font-size: 28.43px;
+    font-weight: 400;
+    line-height: 36.96px;
+    color: #080c1f;
+}
+
+.tesimoneal .designation{
+    font-size:16px;
+    font-weight: 400;
+    line-height:28px;
+    color: #6f7f92;
+}
+
+.tesimoneal ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    padding-top: 32px;
+}
+
+.footer .wrapper .mail{
+    width: 100%;
+    position: relative;
+}
+
+.footer .wrapper .mail .in{
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 10px;
+    
+}
+
+.footer .wrapper .mail button{
+    padding: 10px 25px;
+    position: absolute;
+    right: 0;
+    background-color: #FFB400;
+}
+
+
+/* ....................................................media-query.......................... */
+
+@media (max-width:1400px) {
+    
+}
+@media (max-width:1200px) {
+    
+}
+
+@media (max-width:992px) {
+    .side {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .side {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .side {
+        display: none;
+    }
+}
+
+/* ....................................................media-query.......................... */
