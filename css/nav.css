@@ -16,12 +16,13 @@
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .hero-section{
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
+    background-attachment: fixed;
     padding: 80px 0;
     position: relative;
     z-index: 1;
@@ -188,21 +189,13 @@
     font-weight: 400;
     line-height: 24px;
 }
-.item-card{
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-.item-card-2{
-    margin: -40px 0 0 ;
-    overflow: hidden;
-}
 
 /* ........................................................................ */
 
 .support-section{
     background-image: url(../img/suport-bg.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     padding: 100px 0;
     position: relative;
@@ -248,7 +241,7 @@
     color: rgb(50, 53, 58);
     position: relative;
 }
-.content-service h2::before{
+/* .content-service h2::before{
     content: "";
     position: absolute;
     width: 67px;
@@ -265,7 +258,7 @@
     background-color: #060606;
     top: 50%;
     right: 37%;
-}
+} */
 .content-service p{
     font-size: 16px;
     font-weight: 400;
@@ -453,7 +446,7 @@
     padding: 30px;
     background-color: #d1cbcb;
     transition: 2s;
-    margin-top: 24px;
+    
 }
 
 
@@ -523,6 +516,11 @@ input::placeholder{
     background-color: white;
     font-size: 14px;
 }
+
+.footer-icone li:hover{
+    background-color: rgb(11, 8, 15);
+    box-shadow: 0 0 10px black;
+}
 .right-part p{
     font-size: 14px;
     font-weight: 400;
@@ -544,6 +542,10 @@ input::placeholder{
     list-style: none;
     color: rgb(50, 53, 58);
     filter: brightness(5);
+}
+
+.right-part a:hover{
+    color: yellowgreen !important;
 }
 .footer-section h4{
     font-size: 16px;
@@ -689,6 +691,7 @@ input::placeholder{
 .call-to-action{
     background-image: url(../img/cta-bg.jpg);
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
     padding: 80px 0;
@@ -835,9 +838,14 @@ input::placeholder{
 .middle-card{
     border: 3px solid rgb(244, 152, 152);
     border-radius: 20px;
-    transform: scale(1.1);
     padding: 0;
     z-index: 1;
+}
+.middle-card:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    z-index: 4;
+    background-color: #f7efef;
 }
 /* ................................................................. */
 
@@ -866,3 +874,20 @@ input::placeholder{
 }
 
 /* ........................................................ */
+@media (max-width:992px) {
+    .clients-section{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .clients-section{
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .clients-section{
+        display: none;
+    }
+}
