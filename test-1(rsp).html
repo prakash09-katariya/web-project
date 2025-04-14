@@ -7,6 +7,9 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/animation-image.css">
     <link rel="stylesheet" href="css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
       <header class="header-section bg-[#1b2a4e] w-full max-[640px]:px-[15px] ">
@@ -105,12 +108,12 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-12 flex items-center py-4 z-30 relative">
           <div class="md:col-span-12 sm:col-span-12 pb-4 max-[640px]:col-span-12">
-            <h1 class="text-[54px] md:text-[48px] max-[640px]:text-[26px] text-center  font-[700] font-serif pb-4 text-[white]">
+            <h1 class="text-[54px] md:text-[48px] max-[640px]:text-[26px] text-center  font-[700] font-serif pb-4 text-[white]"data-aos="zoom-out-up">
               <span class="hover:text-[red]">[Delicious]</span> <br />Food & Restaurant.
             </h1>
            
 
-            <p class="text-[16px] text-center font-[400] text-[white] pb-2">
+            <p class="text-[16px] text-center font-[400] text-[white] pb-2" data-aos="zoom-out-up">
               The Best Food/Restaurant Template in Market
             </p>
             <div class="buton-row flex items-center pt-4 gap-3 flex justify-center">
@@ -142,7 +145,7 @@
              
           </div>
           <div class="grid grid-cols-3 mt-[48px] md:grid-cols-3 sm:grid-cols-1 max-[640px]:grid-cols-1 ">
-              <div class="item drop-shadow-2xl p-4 ">
+              <div class="item drop-shadow-2xl p-4 "data-aos="flip-down">
                 <h2 class="text-[40px] font-[700] font-serif py-[40px] leading-[26px] ">01.</h2>
                 <h5 class="text-[16px] font-[500] font-serif pb-[24px] leading-[16px] text-[#2b2b2b]" >Italian Food</h5>
                 <p class="text-[15px] font-[300] font-serif  leading-[26px] text-[#6d6d6d]">Lorem ipsum dolor  amet, consectetur adipiscing elit augue diam, accumsan  ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -152,7 +155,7 @@
                 <h5 class="text-[16px] font-[500] font-serif pb-[24px] leading-[16px] text-[#2b2b2b]" >Chinese Food</h5>
                 <p class="text-[15px] font-[300] font-serif  leading-[26px] text-[#6d6d6d]">Lorem ipsum dolor  amet, consectetur adipiscing elit augue diam, accumsan  ipsum dolor sit amet, consectetur adipiscing.</p>
               </div>
-              <div class="item drop-shadow-2xl  p-4 ">
+              <div class="item drop-shadow-2xl  p-4 "data-aos="flip-down">
                 <h2 class="text-[40px] font-[700] font-serif py-[40px] leading-[26px] ">03.</h2>
                 <h5 class="text-[16px] font-[500] font-serif pb-[24px] leading-[16px] text-[#2b2b2b]" >Order Online</h5>
                 <p class="text-[15px] font-[300] font-serif  leading-[26px] text-[#6d6d6d]">Lorem ipsum dolor  amet, consectetur adipiscing elit augue diam, accumsan  ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -178,7 +181,7 @@
             Basic info about restaurant
             </h4>
             <h2
-              class="text-center text-[48px] font-'[500] mb-4 font-serif text-[#800000]"
+              class="text-center text-[48px] font-'[500] mb-4 font-serif text-[#800000]"data-aos="zoom-in"
             >
             Expert Chefs
             </h2>
@@ -191,7 +194,7 @@
           </div>
 
           <div class="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 max-[640px]:grid-cols-1">
-            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]">
+            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]"  data-aos="flip-up">
               <div class="image ">
                 <img src="img/food-team1.jpg" alt="" width="100%">
               </div>
@@ -223,7 +226,7 @@
                 
               </ul>
             </div>
-            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]">  
+            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]" data-aos="flip-right">  
               <div class="image ">
                 <img src="img/food-team2.jpg" alt="" width="100%">
               </div>
@@ -255,7 +258,7 @@
                 
               </ul>
             </div>
-            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]">
+            <div class="item-card  border-[20px] border-[white] drop-shadow-sm m-[10px]" data-aos="flip-up">
               <div class="image ">
                 <img src="img/food-team3.jpg" alt="" width="100%">
               </div>
@@ -367,7 +370,7 @@
           Most Delicious Menu
         </h4>
         <h2
-          class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"
+          class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"data-aos="zoom-in"
         >
           Order Menu
         </h2>
@@ -382,7 +385,7 @@
       </div>
     </div>
     <div class="grid grid-cols-3 sm:grid-cols-1 max-[640px]:grid-cols-1 md:grid-cols-3 ">
-        <div class="card px-[21px] py-[32px] m-[10px]  shadow-lg">
+        <div class="card px-[21px] py-[32px] m-[10px]  shadow-lg" data-aos="flip-left">
             <h2 class="text-[24px] font-[500] text-[red] pb-[24px] -b-1">Basic</h2>
             <div class="price-tag flex items-center border-b-1 border-t-1 py-[15px]">
                 <div class="price mr-[15px]">
@@ -424,7 +427,7 @@
               </ul>
               <a class=" py-[9px] px-[34px] bg-[#2b2b2b;] block text-center text-[white] rounded-full" href="#">Buy Now</a>
         </div>
-        <div class="card px-[21px] py-[32px] m-[10px]  shadow-lg">
+        <div class="card px-[21px] py-[32px] m-[10px]  shadow-lg" data-aos="flip-right">
               <h2 class="text-[24px] font-[500] text-[red] pb-[24px]">Advance</h2>
               <div class="price-tag flex items-center border-b-1 py-[15px] border-b-1 border-t-1 ">
               <div class="price mr-[15px] ">
@@ -511,12 +514,12 @@
             <div class="grid grid-cols-12 ">
                 <div class="col-span-12 pb-[48px]">
                   <h4
-                    class="text-center text-[16px] font-[500] mb-4 font-serif text-[#2b2b2b]"
+                    class="text-center text-[16px] font-[500] mb-4 font-serif text-[#2b2b2b]"data-aos="zoom-in"
                   >
                   Most reliable application
                   </h4>
                   <h2
-                    class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"
+                    class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"data-aos="zoom-in"
                   >
                   Order Through App
                   </h2>
@@ -529,12 +532,12 @@
             </div>
             <div class="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 max-[640px]:grid-cols-1">
                 <div class="card-first">
-                    <div class="card text-center shadow-md p-5 mb-[48px]">
+                    <div class="card text-center shadow-md p-5 mb-[48px]" data-aos="flip-up">
                         <span><i class="text-[40px] mb-[24px] fa-regular fa-gem"></i></span>
                         <h2 class="text-[24px] mb-[16px] font-serif font-[500] leading-[24px]">Free Delivery</h2>
                         <p class="text-[15px] font-[300] font-serif leading-[26px] text-[grey]">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
                     </div>
-                    <div class="text-[40px] mb-[24px]  card text-center mt-4 shadow-md p-5">
+                    <div class="text-[40px] mb-[24px]  card text-center mt-4 shadow-md p-5"data-aos="flip-up">
                         <span><i class="fa fa-edit gradient-text1" aria-hidden="true"></i></span>
                         <h2 class="text-[24px] mb-[16px] font-serif font-[500] leading-[24px]">Economical</h2>
                         <p class="text-[15px] font-[300] font-serif leading-[26px] text-[grey]">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
@@ -544,12 +547,12 @@
                     <img src="img/cook.avif" alt="" width="100%" class="mx-auto">
                 </div>
                 <div class="card-first ">
-                    <div class="card text-center shadow-md p-5 mb-[48px]">
+                    <div class="card text-center shadow-md p-5 mb-[48px]"data-aos="flip-up">
                         <span><i class="text-[40px] mb-[24px] fa fa-code gradient-text1" aria-hidden="true"></i></span>
                         <h2 class="text-[24px] mb-[16px] font-serif font-[500] leading-[24px]">Delicious</h2>
                         <p class="text-[15px] font-[300] font-serif leading-[26px] text-[grey]">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
                     </div>
-                    <div class=" card text-center shadow-md p-5">
+                    <div class=" card text-center shadow-md p-5"data-aos="flip-up">
                         <span><i class="text-[40px] mb-[24px] fa-solid fa-shield"></i></span>
                         <h2  class="text-[24px] mb-[16px] font-serif font-[500] leading-[24px]">Order Online</h2>
                         <p class="text-[15px] font-[300] font-serif leading-[26px] text-[grey]">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
@@ -562,7 +565,7 @@
       <div class="w-full max-[640px]:px-[15px] max-[640px]:py-[35px] py-[120px] bg-[#f8f9fa] breack-fast-section">
       <div class="container mx-auto">
           <div class="grid grid-cols-2 flex items-center gap-[50px] max-[640px]:grid-cols-1">
-              <div class="item mb-[48px] overflow-hidden">
+              <div class="item mb-[48px] overflow-hidden" data-aos="zoom-in">
                   <img src="img/food-blog-image1.jpg" alt="" class="hover:scale-110 duration-300 ease-in" >
               </div>
               <div class="item">
@@ -578,7 +581,7 @@
                   <p class="text-[15px] font-[300] font-serif leading-[26px] mb-[24px] text-[#6d6d6d]" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut aliquip.</p>
                   <a class="py-[9px] px-[34px] bg-[red] rounded-full text-[white]" href="">Learn More</a>
               </div>
-              <div class="item mb-[48px] overflow-hidden ">
+              <div class="item mb-[48px] overflow-hidden " data-aos="zoom-in">
                   <img src="img/food-blog-image2.jpg" alt=""class="hover:scale-110 duration-300 ease-in">
               </div>
           </div>
@@ -595,7 +598,7 @@
                 Lorem ipsum dolor sit amet
                 </h4>
                 <h2
-                  class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"
+                  class="text-center text-[48px] max-[640px]:text-[26px] font-'[500] mb-4 font-serif text-[#800000]"data-aos="zoom-in"
                 >
                 Let's Get In Touch
                 </h2>
@@ -644,6 +647,8 @@
       </footer>
    
 
-  
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
